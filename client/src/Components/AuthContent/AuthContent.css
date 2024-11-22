@@ -1,0 +1,104 @@
+.AuthContent {
+    margin-top: 150px;
+    font-size: 20px;
+}
+
+.AuthContent-button-container {
+    display: flex;
+    gap: 10px; /* Расстояние между кнопками */
+    align-items: center;
+    justify-content: center;
+}
+
+.AuthContent-info-title{
+    font-size: 32px;
+    transform: skew(20deg);
+}
+
+.AuthContent-info-container {
+    background-color: #163E6C;
+    color: white;
+    padding: 15px 20px;
+    transform: skew(-20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: -1;
+}
+
+.AuthContent-info-container:hover {
+    transform: scale(1.05) skew(-20deg); /* Увеличение при наведении */
+    background-color: #2a5a94; /* Осветляем цвет при наведении */
+}
+
+.AuthContent-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.AuthContent-selector-button {
+    background: #163E6C;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'PT Astra Sans', sans-serif;
+    border: none; /* Убирает стандартную рамку кнопки */
+}
+
+.AuthContent-selector-button:hover {
+    background-color: #2a5a94; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+.AuthContent-selector-button:active {
+    background-color: #1c4b7c; /* Цвет фона при нажатии */
+}
+
+@media (max-width: 1344px) {
+    .AuthContent-info-container {
+        padding: 10px 15px;
+        transform: skew(0deg); /* Убираем наклон для мобильных */
+        max-width: 90%;
+        border-radius: 10px; /* Скругляем углы для мобильных */
+    }
+
+    .AuthContent-info-container:hover {
+        transform: scale(1.05); /* Сохраняем только увеличение */
+    }
+
+    .AuthContent-info-title {
+        font-size: 16px;
+        transform: skew(0deg);
+    }
+}
+
+@media (max-width: 480px) {
+    .AuthContent-info-container {
+        padding: 8px 10px;
+        transform: skew(0deg);
+        max-width: 90%;
+    }
+
+    .AuthContent-info-title{
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (hover: none) {
+    .AuthContent-info-container:hover {
+        transform: none;
+        background-color: #163E6C;
+    }
+}

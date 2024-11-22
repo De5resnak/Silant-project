@@ -1,0 +1,30 @@
+.guest-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden; /* Для закругленных углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+
+.guest-table th,
+.guest-table td {
+  border: 1px solid black; /* Черные линии между ячейками */
+  padding: 12px;
+  text-align: left;
+}
+
+.guest-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.guest-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Полосы для четных строк */
+}
+
+.guest-table tr:hover {
+  background-color: #eaeaea; /* Подсветка строки при наведении */
+}
+

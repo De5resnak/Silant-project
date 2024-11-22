@@ -1,0 +1,138 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: white;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: fixed;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.tg-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.header-auth-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.header-layer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.header-contacts-container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 20;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-text {
+    font-size: 25px;
+}
+
+.header-auth {
+    background: #163E6C;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'PT Astra Sans', sans-serif;
+}
+
+.header-auth:hover {
+    background-color: #2a5a94;
+}
+
+.header-contacts {
+    font-size: 16px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .header-layer1{
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-contacts-container {
+        display: none; /* Скрыть контакты */
+    }
+
+    .header-text {
+        font-size: 18px; /* Уменьшить размер текста */
+    }
+
+    .header-text-container {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-auth-container {
+        width: 100%;
+        justify-content: flex-end; /* Кнопка по правому краю */
+    }
+
+    .header-auth {
+        width: 100px; /* Сократить размер кнопки */
+        font-size: 14px; /* Уменьшить шрифт */
+        margin-left: 15px;
+    }
+
+    .logos {
+        justify-content: space-between; /* Логотипы по углам */
+        gap: 10px;
+    }
+}
+
+/* Дополнительный медиа-запрос для очень маленьких экранов */
+@media (max-width: 480px) {
+    .header-text {
+        font-size: 16px; /* Еще меньше шрифт для совсем маленьких экранов */
+    }
+
+    .header-auth {
+        width: 80px; /* Уменьшить кнопку */
+        font-size: 12px; /* Меньший шрифт для кнопки */
+    }
+}

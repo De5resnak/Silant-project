@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'PT Astra Sans';
+  src: url('./fonts/PT-Astra-Sans_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Жирный (Bold) */
+@font-face {
+  font-family: 'PT Astra Sans';
+  src: url('./fonts/PT-Astra-Sans_Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Курсив (Italic) */
+@font-face {
+  font-family: 'PT Astra Sans';
+  src: url('./fonts/PT-Astra-Sans_Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Жирный курсив (Bold Italic) */
+@font-face {
+  font-family: 'PT Astra Sans';
+  src: url('./fonts/PT-Astra-Sans_Bold-Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Применяем шрифт ко всем элементам на сайте */
+body {
+  font-family: 'PT Astra Sans', sans-serif;
+}

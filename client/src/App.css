@@ -1,0 +1,13 @@
+/* Цвета: #163E6C, #D20A11, #EBE6D6. */
+
+body {
+  background: #EBE6D6;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+

@@ -1,0 +1,41 @@
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden; /* Для закругленных углов */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.table th,
+.table td {
+    border: 1px solid black; /* Черные линии между ячейками */
+    padding: 12px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Полосы для четных строк */
+}
+
+.table tr:hover {
+    background-color: #eaeaea; /* Подсветка строки при наведении */
+}
+
+.table-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
