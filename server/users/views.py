@@ -50,8 +50,13 @@ class LoginView(APIView):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def get_company(request):
+    # Проверяем, является ли пользователь менеджером
+    if request.user.is_manager():
+        return Response({'message': 'Manager'})
+
     # Получаем компанию из модели CustomUser
-    company_name = request.user.company
+    company_name = request.user.company if request.user.is_authenticated else None
+
     if company_name:
         return Response({'company_name': company_name})
     else:

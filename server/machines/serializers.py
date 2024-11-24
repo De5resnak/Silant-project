@@ -9,7 +9,6 @@ class ReferenceSerializer(serializers.ModelSerializer):
 
 
 class MachineSerializer(serializers.ModelSerializer):
-    # Для полей ForeignKey используем вложенные сериализаторы
     equipment_model = ReferenceSerializer(read_only=True)
     engine_model = ReferenceSerializer(read_only=True)
     transmission_model = ReferenceSerializer(read_only=True)
